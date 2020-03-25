@@ -10,7 +10,7 @@ DEVELOPER_KEY = "AIzaSyCAuaNSA64SSfdLLbC78C8z5lSEQWxK7sA"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
-def youtube_search(q=None, max_results=50,order="relevance", token=None,fromDate= None, toDate= None location=None, location_radius=None):
+def youtube_search(q=None, max_results=50,order="relevance", token=None):
 
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,developerKey=DEVELOPER_KEY)
 
@@ -20,11 +20,7 @@ def youtube_search(q=None, max_results=50,order="relevance", token=None,fromDate
     pageToken=token,
     order = order,
     part="id,snippet", # Part signifies the different types of data you want
-    maxResults=max_results,
-    location=location,
-    locationRadius=location_radius,
-    publishedAfter= fromdate,
-    publishedBefore= todate).execute()
+    maxResults=max_results).execute()
 
     title = []
     channelId = []
