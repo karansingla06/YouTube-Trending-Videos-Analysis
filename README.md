@@ -1,6 +1,6 @@
 # YouTube Trending Videos Statistical Analysis using Spark
 
-Analysis on the dataset using different factors like country, category, viewscount, likes, dislikes, tags etc.</br>
+Analysis on the youtube trending dataset using different factors like country, category, viewscount, likes, dislikes, tags and more.</br>
 
-Also, collected recent trending videos data using YouTube v3 Data API. Analysis will be done on the collected data to find how popular COVID-19 Coronavirus became day by day on YouTube.
+Also, collected recent trending Covid-19 videos data using YouTube v3 Data API. Analysis completed on the collected data and results depict the exponential growth in terms of people reactions and youtube no of videos related to Covid-19.
 
